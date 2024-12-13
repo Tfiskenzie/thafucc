@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choose Account Type</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="sign.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Title and Description -->
+    <h1>Choose Your Account Type</h1>
+    <p class="description">
+      Select the account type that works best for you. Whether you're an individual or an organization, we've got you covered.
+    </p>
+
+    <!-- Form with Account Options -->
+    <form id="account-form">
+      <div class="card-wrapper">
+        <!-- Individual Card -->
+        <label class="card" for="individual">
+          <input type="radio" id="individual" name="accountType" value="individual" />
+          <div class="card-content">
+            <div class="icon"><i class="fa fa-male"></i></div>
+            <h2>Individual</h2>
+            <p>Perfect for freelancers and personal use:</p>
+            <ul>
+              <li><span class="checkmark">✔</span> Personal workspace</li>
+              <li><span class="checkmark">✔</span> Basic project management</li>
+              <li><span class="checkmark">✔</span> Individual analytics</li>
+              <li><span class="checkmark">✔</span> Standard support</li>
+            </ul>
+          </div>
+        </label>
+
+        <!-- Organization Card -->
+        <label class="card" for="organization">
+          <input type="radio" id="organization" name="accountType" value="organization" />
+          <div class="card-content">
+            <div class="icon"><i class="fa fa-users"></i></div>
+            <h2>Organization</h2>
+            <p>Ideal for teams and businesses:</p>
+            <ul>
+              <li><span class="checkmark">✔</span> Team collaboration</li>
+              <li><span class="checkmark">✔</span> Advanced project management</li>
+              <li><span class="checkmark">✔</span> Team analytics & reporting</li>
+              <li><span class="checkmark">✔</span> Priority support</li>
+            </ul>
+          </div>
+        </label>
+      </div>
+
+      <!-- Continue Button -->
+      <button type="button" class="continue-btn" onclick="redirectUser()">Continue</button>
+    </form>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
